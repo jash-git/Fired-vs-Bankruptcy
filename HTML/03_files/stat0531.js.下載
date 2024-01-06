@@ -1,0 +1,58 @@
+﻿$(function () {
+    setTimeout("$_statnew.onstat()", 200);
+    console.log("stat load");
+});
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+var $_statnew = new (function () {
+    var state = false;
+    this.onstat = function (n) {
+        if (typeof statobj != "object") {
+            console.log("statobj==null");
+            return;
+        }
+        var isuv = 1;
+        if (getCookie("book" + statobj.artid) == "") {
+            setCookie("book" + statobj.artid, "1", 1)
+        }
+        else {
+            isuv = 0;
+        }
+        if (!state) {
+            state = true;
+            console.log("stat invoke " + isuv);
+            try {
+                var ms = location.hash.match(new RegExp('token=([^&|#]*)'));
+                $.ajax({
+                    url: "https://twtpstat.zhen" + "too.com/bookstat.ashx",
+                    data: {
+                        artid: statobj.artid,
+                        chapterid: statobj.chapterid,
+                        userid: statobj.tuid,
+                        url: location.href,
+                        isuv: isuv,
+                        refurl: document.referrer
+                    },
+                    cache: false,
+                    dataType: "script"
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    };
+})();

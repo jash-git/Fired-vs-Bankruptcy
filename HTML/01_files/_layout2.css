@@ -1,0 +1,301 @@
+﻿@media screen and (max-width:1280px) {
+    .vlist li {width:20%;}
+    .pageleft .vlist ul li {width:25%;}
+    .vlist .nlist li {width:33.33%;}
+    html.novel .pageleft {width:62%;}
+    html.novel .pageright {width:38%;}
+    .pageleft .vlist .nlist li {width:100%;}
+    .vlist .nlist li {width:50%;}
+    .pagecenter .nlist .cover {width:150px;}
+    .pagecenter .nlist li .listdata {left:150px;}
+    .nlist li .listdata span {margin-right:0;}
+    .pagecenter .nlist li .listdata span.author {max-width:40px;overflow:hidden;text-overflow:ellipsis;vertical-align:top;}
+}
+
+@media screen and (max-width:980px) {
+    .vlist li {width:25%;}
+    .searchlist ul li {width:50%;}
+    .pageleft {border-width:30px 10px 30px 10px;}
+    .pageright {border-width:30px 10px 30px 10px;}
+    .pageleft .vlist ul li {width:33.33%;}
+    .pagecenter .nlist li {width:50%;}
+    .logo img, .logo amp-img {height:40px;width:134px;}
+}
+
+@media screen and (min-width:768px) {
+    html body .mobiles {display:none;}
+}
+
+@media screen and (max-width:767px) {
+    html:root {
+        --nav-main-height: 50px;
+        --pagetitle-height: 40px;
+        --changepage-width: 36px;
+        --usermenuwidth: 240px;
+    }
+    body {padding-bottom:0px;}
+    footer {height:auto;position:relative;}
+    footer .footerbox {height:auto;}
+    .footerleft {text-align:center;line-height:120%;float:none;padding-bottom:10px;}
+    .footerright {float:none;height:auto;}
+    .footerright ul {white-space:nowrap;display:block;width:100%;padding:0;}
+    .footerright ul li {width:25%;box-sizing:border-box;padding:0;}
+    .footerright ul li span {font-size:.65rem;height:auto;line-height:120%;}
+    .popchaplist {height:350px;}
+    .popchapbox .chaptitle {padding:0 0 5px 0;}
+    .popchapbox .chapterPage {padding-top:5px;}
+    body .layui-layer-dialog {width:300px;min-width:300px;}
+    .headbox {padding:0 0 0 5px;position:unset;}
+    html.novel .headbox {border-bottom:0px solid #fff;}
+    .logo, html.novel .logo {width:134px;height:40px;margin:5px 0;}
+    .search {height:auto;width:auto;padding:0;position:absolute;top:0;left:0;}
+    .searchbg {position:fixed;width:100%;height:100%;z-index:9;overflow:hidden;display:none;opacity:0;}
+    .searchbg button {display:block;border:0;width:100%;height:100%;text-align:center;text-align:center;background:var(--background-popbg);}
+    .searchbox {display:block;position:fixed;top:0;left:-100%;width:80%;height:100%;z-index:10;box-sizing:border-box;padding:0px 0px 50px 0px;background-color:#fff;}
+    .search.show .searchbg {display:block;animation:fadein .5s forwards;}
+    .search.show .searchbox {animation:showsearch .2s forwards;}
+    .searchbox .sinput input {border:1px solid #ddd;background-color:#f3f3f3;border-radius:0;box-sizing:border-box;font-size:.8rem;color:#333;}
+    .searchbox .sinput input::placeholder {color:#999;}
+    .searchbox .sinput {border-bottom:1px solid #ddd;padding:15px;}
+    .searchbox .sbtn {top:15px;right:15px;}
+    .searchbox .sbtn button {border-radius:0;border:1px solid rgba(0,0,0,0.1);box-sizing:border-box;}
+    .headlogin {height:50px;padding:10px 0;}
+    .headlogin {padding:10px;}
+    .headlogin span {padding:0;line-height:30px;}
+    .headlogin span button svg {display:block;width:100%;height:100%;fill:var(--color-main);box-sizing:border-box;padding:5px;}
+    html.novel .headlogin span button svg {padding:2px;}
+    html.novel .headlogin span a {height:30px;padding:0;}
+    html.novel .headlogin span a svg {height:24px;}
+    html.novel .headlogin span a b {font-size:0;}
+    html.novel .headlogin span button svg {width:24px;}
+    .headlogin span button, html.novel .headlogin span button {padding:0;width:30px;height:30px;height:30px;padding:0px;font-size:0;background-color:#fff;}
+    .headlogin span.mshow {display:inline-block;}
+    .headlogin span a {display:inline-block;vertical-align:top;height:30px;line-height:30px;font-style:normal;padding:0 10px 0 0;}
+    .headlogin span a b {font-weight:normal;font-size:.9rem;display:inline-block;vertical-align:top;white-space:nowrap;max-width:60px;overflow:hidden;text-overflow:ellipsis;color:var(--color-main);}
+    .headlogin span a svg {display:block;float:left;width:26px;height:30px;fill:var(--color-main);box-sizing:border-box;padding:2px;}
+    .navmain, html.novel .navmain {display:block;position:fixed;top:0px;width:60%;left:100%;z-index:11;height:100%;padding:0px 0 0 0 ;box-sizing:border-box;background-color:unset;}
+    .navmain ul, html.novel .navmain ul {display:block;position:absolute;top:0px;width:100%;right:0;height:100%;background-color:#fff;padding:0 0 50px 0;z-index:1;}
+    html.novel .navmain ul {padding:0 15px;}
+    html.novel .navs {border-top:0;background-image:none;background-color:rgba(255,255,255,0.85);clear:both;}
+    .navmain ul li {display:block;width:auto;margin:0;padding:0;}
+    html.novel .navmain ul li {margin:5px 10px;width:auto;}
+    html.novel .navmain li.now {padding:3px;margin:5px auto;}
+    html.novel .navmain li a {padding:0 10px;}
+    .navmain li a {color:#333;padding:0 10px 0 20px;}
+    .navmain ul li svg {fill:#666;}
+    .navmain ul li a:hover svg {fill:var(--color-main)}
+    .navmain li a:hover, .navmain li a:active {color:var(--color-main)}
+    .navmain li.now a {color:var(--color-main);padding:0 10px 0 20px;background-color:rgba(0,0,0,0.05)}
+    .navmain ul li.now svg, .navmain ul li.now a:hover svg {fill:var(--color-main)}
+    .navmain li.now:after {background-color:var(--color-main);width:40%;  left:15px;}
+    nav.show .navmain {display:block;animation:shownav 0.2s forwards;}
+    html.novel nav.show .navmain {z-index:10;height:100%;position:fixed;}
+    .navs ul {white-space:nowrap;overflow-x:auto;margin:0;height:40px;box-sizing:border-box;padding:0 10px;}
+    .navs ul li {height:40px;line-height:40px;margin-right:0;padding:0 20px;}
+    .navbg {position:absolute;top:0;left:0;width:100%;height:100%;z-index:9;display:none;opacity:0;}
+    nav.show .navbg {display:block;animation:fadein 0.5s forwards;}
+    .navbg button {display:block;width:100%;height:100%;border:0;background:var(--background-popbg);margin:0;padding:0;}
+    .pageleft, .pageright, .pagecenter, html.novel .pageleft, html.novel .pageright {display:block;width:auto;padding:10px 10px 0 10px;border-width:0;}
+    .vlist li, .pageleft .vlist ul li {width:50%;}
+    .tagnav .tagnavdl dd {display:none;}
+    .tagnav {padding:0 0 5px 0;}
+    .tagnavdl {padding:0;}
+    .tagnav dl {height:auto;}
+    .tagnav dt {height:50px;font-size:1.1rem;}
+    .tagnav dt a em {float:none;text-align:center;height:20px;line-height:20px;display:block;font-size:.8rem; background:rgba(0,0,0,0.2);opacity:0.6;}
+    .tagnav dt a b {background:unset;}
+    .changepage {padding:10px 0 20px 0;}
+    .changepage li {margin-bottom:5px;}
+    .changepage li.start,
+    .changepage li.prv,
+    .changepage li.next,
+    .changepage li.end {display:inline-block}
+    .searchlist ul li {width:100%;margin-bottom:0px;}
+    .searchlist .infos {padding:0 0 20px 0;}
+    .searchlist .infos .name { font-size:1.2rem;padding:0px 0 5px 0;}
+    .searchlist .infos .desc {}
+    .searchlist .infos .author {font-size:.8rem;padding:0 0 5px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .sort {padding:10px 0 20px 0;}
+    .filterbox dl {padding:10px 10px 5px 10px;}
+    html.novel .filterbox dl {border-bottom:2px solid #fff;}
+    .filter {padding:0px;border-bottom-width:3px;}
+    html.novel .filter {border-bottom:2px solid #fff;border-top:2px solid #fff;}
+    .filterbox {background-color:unset;}
+    .filterbox dd ul {max-height:145px;overflow:hidden;overflow-y:auto;}
+    .filterbox dd li {padding:2px 0;margin:0 6px 0 0;}
+    .vlist ul {margin:0 -5px;}
+    .vlist li {padding:0 5px 15px 5px;}
+    .vlist li .name {font-size:1.1rem;}
+    .usercenter .vlist li {width:50%;}
+    .vlist ul li span.del {right:5px;}
+    .popwindowbody {width:90%;}
+    .headback {float:left;width:30px;height:30px;padding:10px 5px 0 5px;}
+    .headback button {display:block;width:100%;height:100%;border:0;background-color:transparent;}
+    .headback svg {display:block;width:100%;height:100%;fill:#fff;box-sizing:border-box;padding:5px 0;}
+    html.novel .headback svg {fill:var(--color-main)}
+    .searchbtn {float:left;width:30px;height:30px;padding:10px 0 0 10px;}
+    .searchbtn svg, .headloginbtn svg {fill:#fff;display:block;width:30px;height:30px;margin:0;box-sizing:border-box;padding:3px;}
+    html.novel .searchbtn svg, html.novel .headloginbtn svg {fill:var(--color-main);padding:3px;width:24px;height:24px;}
+    .headloginbtn {float:right;width:30px;height:30px;padding:10px 0 0 10px;}
+    .headloginbtn button, .searchbtn button {display:block;width:30px;height:30px;border:0;background:none;padding:0;}
+    html.novel .headloginbtn button, html.novel .searchbtn button {background-color:#fff;border-radius:40px;border:3px solid #fff;box-sizing:border-box;box-shadow:0 3px 5px rgba(0,0,0,0.2)}
+    html.novel .headloginbtn button, htm.novel .searchbtn button {background-color:#fff;}
+    .booknav {display:none;}
+    .bookbox {padding:0px;position:relative;}
+    .bookpage {padding:0;}
+    .bookpage .vlist, .bookpage .pagetitle {padding-left:10px;padding-right:10px;}
+    .bookpage .pagetitle {padding-bottom:0;}
+    .bookbox .cover {margin-right:0;overflow:hidden;max-width:unset;width:128px;position:absolute;top:15px;left:15px;box-shadow:0 2px 10px rgba(0,0,0,0.2)}
+    .bookbox .cover:after {content:"";display:none;width:100%;height:100%;position:absolute;top:0;left:0;z-index:2;background-image:linear-gradient(to bottom,rgba(255,255,255,0) 10%,rgba(255,255,255,0.8) 70%,rgba(255,255,255,1) 90%)}
+    .bookbox .cover img.imgmask {width:auto;height:100%;}
+    .bookbox .bookinfocont {position:relative;overflow:hidden;}
+    .bookbox .title {position:relative;width:auto;left:0;box-sizing:border-box;padding:15px 15px 5px 155px;z-index:3;height:auto;line-height:150%;}
+    .bookbox .title b {font-size:1.4rem;vertical-align:middle;line-height:120%;display:inline}
+    .bookbox .title span a {padding:4px 5px;}
+    .bookbox .title span {margin:5px 5px 0px 0;vertical-align:bottom}
+    .bookbox .author {padding:0 0 5px 155px;font-size:1.1rem;}
+    .bookbox .data {padding:5px 0 0px 155px;font-size:0rem;}
+    .bookbox .data span {display:inline-block;height:1.3rem;line-height:1.3rem;width:50%;vertical-align:top;margin:0 0 4px 0;font-size:.85rem;}
+    .bookbox .desc {display:block;clear:both;overflow:hidden;padding:5px 15px 0 15px;height:auto;min-height:unset;}
+    .curchap {margin-block:0;}
+    .chaplist {border:0;border-bottom:1px solid #ddd;}
+    .curchap a {border-width:1px 0;padding:8px 5px;line-height:110%;padding-left:40px;}
+    .ratingbox {padding:5px 55px 0 10px;position:relative;}
+    .ratingnum {padding:0;width:55px;top:7px;right:0;position:absolute;text-align:center;font-size:1.4rem;}
+    .bookbox .funbtn {padding:8px 15px 15px 15px;}
+    .rankbox { padding: 0; width: 100%; overflow: hidden; }
+    .rankbox dl, .twocat .rankbox dl { width: 33.33%;padding:0;}
+    .rankbox dl dt { padding: 10px 0;}
+    .rankbox dl dd { width: 300%; box-sizing: border-box; position: relative; transition: all 0.3s; }
+    .rankbox dt.now { color: var(--color-main); font-weight: bold; }
+    .rankbox dl dd h3, .rankbox dl dd h3 button {font-size:1.1rem;}
+    .rankbox dd.d1, .rankbox dd.d101 { left: 0; padding: 15px 10px 15px 10px; }
+    .rankbox dd.d2, .rankbox dd.d102 { left: 200%; }
+    .rankbox dd.d3, .rankbox dd.d103 { left: 100%; }
+    .rankbox dl dd ul { font-size: 0;padding-top:0;}
+    .rankbox dl dd ul li { padding: 10px 10px 10px 10px; width: 100%; display: inline-block; box-sizing: border-box; }
+    .rankbox dd.d1 { left: 0; padding: 15px 10px 15px 10px; }
+    .rankbox dd.d2 { left: 200%; }
+    .rankbox dd.d3 { left: 100%; }
+    .rankbox.d2 dd.d1 { left: -300%; }
+    .rankbox.d2 dd.d2 { left: -100%; }
+    .rankbox.d2 dd.d3 { left: 100%; }
+    .rankbox.d3 dd.d1 { left: -300%; }
+    .rankbox.d3 dd.d2 { left: -500%; }
+    .rankbox.d3 dd.d3 { left: -200%; }
+    .rankbox dl dt { display: none; }
+    .rankbox dl dt.mobiledt { display: block; }
+    .rankbox dl { padding: 0; }
+    .curchap a svg {width:20px;height:30px;position:absolute;left:10px;top:50%;margin-top:-16px;}
+    .curchap a em {font-size:.9rem;margin:0 8px 0 0;}
+    .curchap a .lastchap span {font-size:1.1rem;}
+    .curchap a .lastchap span:last-child {top:8px;}
+    html body .pcs {display: none;}
+    .chapterlist li {width:100%}
+    .userpage {border-width:0;}
+    .usermenu {position:unset;width:100%;box-sizing:border-box;padding:10px;background-color:unset;}
+    .userface {position:relative;margin:0;float:left;width:80px;height:80px;border-width:1px;border-radius:50%;top:unset;left:unset;box-shadow:0 3px 6px rgba(0,0,0,0.2);border:2px solid #fff;}
+    .userface button {width:100%;height:100%;background-color:transparent;}
+    .userface button svg {padding:4px;display:block;position:absolute;left:0;bottom:0;width:100%;height:20px;opacity:1;}
+    .userinfos {width:auto;overflow:hidden;min-height:90px;padding:0 0 0 10px;}
+    .username, .usercoin, .uservip {text-align:left;}
+    .uservip svg, .usercoin img {width:20px;height:20px;padding:0;}
+    .usercoin, .uservip {line-height:20px;white-space:nowrap;font-size:.9rem;}
+    .mylist {padding:0px 0;}
+    .usermenu .mylist {border-block:1px solid #ddd;background-color:#f3f3f3;margin:0 -10px;}
+    .usermenu .mylist li a > div {display:inline-block;vertical-align:top;}
+    .usermenu .mylist ul {font-size:0;display:flex;display:block;flex-wrap:nowrap;align-items:stretch}
+    .usermenu .mylist li {display:inline-block;width:33.33%; vertical-align:top;border-bottom:0;height:100%;padding:0px 0 0px 0;position:relative;}
+    .usermenu  li > a > div > svg, .usermenu .mylist li a > div img {margin:0;height:24px;fill:#999;display:inline-block;vertical-align:middle;width:20px;margin-right:3px;}
+    .usermenu li >a {display:block;width:100%;height:auto; text-align:center;padding:10px 0;}
+    .usermenu .mylist li > a > div > svg path {fill:#999;}
+    .usermenu  li.now > a > div > svg {fill:var(--color-main2);}
+    .usermenu .mylist li.now > a > div > svg path {fill:var(--color-main2);}
+    .usermenu .mylist li a > div:first-child, .usermenu .mylist li a > div {font-size:1rem;text-align:center;line-height:24px;}
+    .mylist li.now {background-color:unset;}
+    .mylist li.now a {color:var(--color-main2)}
+    .mylist.center li {padding:0px;}
+    .mylist.center li a {display:block;padding:13px 10px;}
+    .mylist.center li a:active {background-color:rgba(0,0,0,0.05)}
+    .mylist.center {padding:10px 0;border-top:1px solid #ddd;padding:0;margin:10px -10px;}
+    .userpagebox {padding:0 10px;min-height:unset;background-color:unset;}
+    .userleft, .userright, .usercenter {width:auto;padding:0;display:block;}
+    .qiandao {width:100%;padding-right:19%;box-sizing:border-box;max-width:450px;}
+    .qiandaotitle {font-size:.8rem;}
+    .qiandaoli {width:100%;}
+    .qiandaoli ul {width:100%;}
+    .qiandaoli ul li span {font-size:1rem;display:block;}
+    .qiandaoli ul li {border-radius:4px;width:14.28%;}
+    .qiandaobtn {position:absolute;right:0;top:0;width:18%;min-width:unset;}
+    .useredit {position:absolute;top:0px;right:0px;width:20px;height:35px;padding:0 5px}
+    .usereditpopimgs {padding:10px 0 60px 0;}
+    .usereditpopimgs ul li {padding:4px;}
+    .usereditpopimgs ul li img {border:2px solid #fff;box-sizing:border-box;}
+    .usereditpopimgs ul li.select img {border:2px solid #f90;padding:2px;}
+    .usereditpopimgs ul {padding:0;}
+    .indexmore {padding:0;}
+    .indexmore .filter {float:none;width:100%;}
+    .indexmore .filter .pagetitle {padding:0 10px; font-size:1rem;}
+    .pagetitle h3 {font-size:1.2rem;}
+    .indexmore .filter dt {padding-top:0;}
+    .indexmore .filter {margin-bottom:10px;}
+    .filterbox dt {min-width:60px;font-size:.85rem;display:block;float:none;padding:0px 0 5px 5px;height:auto;line-height:1rem;}
+    .sort span {padding:0 10px;}
+    .sort span:last-child {border-right:0;padding-right:0;}
+    .chapterPage {white-space:nowrap;overflow:hidden;overflow-x:auto;padding:4px;display:block;}
+    .chapterPage li a {padding:0 10px;}
+    .chaptitle {padding:10px 0 0 0;}
+    .pagetitle {padding-bottom:0;}
+    .vlist .hiscont>div span {font-size:.8rem;}
+    .vlist .hiscont > div {font-size:.85rem;}
+    .chaplistpop .chaptitle { position: absolute; top: 0; left: 0; width: 100%; z-index: 1; background: #fff; }
+    .chaptitle h4 {display:block;padding:0;height:30px;line-height:30px;}
+    .chapterPage li {height:40px;line-height:36px;}
+    .chapterlist li a h3 {padding-left:40px}
+    .chaplistpop .chapterlist { position: relative; z-index: 0; padding: 93px 5px 5px 5px; height: 100%; box-sizing: border-box; overflow: hidden; overflow-y: auto; }
+    .chaplistpop .chapterlist li a { padding: 5px 20px 5px 5px; line-height: 30px; }
+    .chaplistpop { display: none; position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 100%;opacity:0;}
+    .chaplistpop.show {display:block;animation:fadein 0.3s forwards;}
+    .chaplistpopbg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;display:block;}
+    .chaplistpopbg button {display:block;width:100%;height:100%;background-color: rgba(0,0,0,0.7); }
+    .chaplistpop .chaplist { position: absolute; top: 20%; left: 5%; width: 90%; height: 60%; box-sizing: border-box; border-radius: 10px; overflow: hidden; overflow-y: auto; }
+    .bookmenulist { display: block; padding: 0; position: relative; }
+    .bookmenulist button { display: block; width: 100%; border: 0; background: #fff; padding: 8px 8px 8px 30px; position: relative; height: 51px; box-sizing: border-box; border-bottom: 1px solid #ddd; text-align: left; font-size: 16px; cursor: pointer; }
+    .bookmenulist button:hover { background-color: #f6f6f6; }
+    .bookmenulist button svg { display: block; width: 20px; height: 20px; top: 50%; margin-top: -10px; left: 5px; fill: #ccc; position: absolute; }
+    .rating-stars {display:block;width:100%;}
+    .rating-stars .rating-stars-container {display:flex;}
+    .navmain li.now a:after {display:none;}
+    .pagebodybox.border-bottom {border-bottom:0;}
+    .pageleft .vlist .nlist li, .vlist .nlist li {padding-bottom:10px;}
+    .vlist .nlist li, .pageleft .vlist .nlist li, .nlist li {width:100%;}
+    html.novel header:after {display:none;}
+    .imgbox:before { box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset; }
+    .pagecenter .nlist .cover, .ztbody .nlist .cover, .nlist li .cover {width:126px;}
+    .pagecenter .nlist li .listdata,
+    .ztbody .nlist li .listdata,
+    .nlist li .listdata
+    {left:0;position:relative;}
+    .nlist li .name, .pagecenter .nlist li .name {padding-top:0; font-size:20px;line-height:28px;height:28px;}
+    .pageleft .nlist li .name {height:28px;}
+    .nlist li .desc {margin:0;}
+    .pageleft .nlist li .desc {padding-top:10px;margin-bottom:0px;}
+    .nlist li .listdata {font-size:.75rem;}
+    .vlist li .listdata span.author {max-width:40px;overflow:hidden;text-overflow:ellipsis;vertical-align:top;}
+    .nlist li .listdata span.author, 
+    .vlist ul.nlist li .listdata span.author,
+    .pagecenter .nlist li .listdata span.author
+    {display:block;max-width:unset;}
+    .nlist li .desc,
+    .pagecenter .nlist li .desc{margin:5px 0}
+    .pageleft .nlist li .listdata {left:126px;bottom:43px;position:absolute;}
+    .pageleft .nlist li .tag {padding-top:38px;padding-bottom:0;}
+    .pageleft .nlist li .tag span {display:block;padding-left:0;padding-top:5px;}
+    .messagelist {border-radius:0;box-shadow:unset;margin:10px -10px;}
+    .messagelist h4 {border-radius:0;}
+}
+@media screen and (max-width:320px) {
+    .footer ul li a {font-size:0rem;}
+    .bookbox .data span.state {display:block;}
+    .nlist li .listdata {font-size:.7rem;}
+}

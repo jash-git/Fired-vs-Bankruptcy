@@ -1,0 +1,91 @@
+document.write(`
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87942765-23"></script>
+<script>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-87942765-23');
+</script>
+`);
+
+
+
+;function setCookie(a,b,c){const d=new Date();d.setTime(d.getTime()+(c*24*60*60*1000));let expires="expires="+d.toUTCString();document.cookie=a+"="+b+";"+expires+";path=/"}function getCookie(a){let name=a+"=";let decodedCookie=decodeURIComponent(document.cookie);let ca=decodedCookie.split(';');for(let i=0;i<ca.length;i++){let c=ca[i];while(c.charAt(0)==' '){c=c.substring(1)}if(c.indexOf(name)==0){return c.substring(name.length,c.length)}}return""};
+
+(() => {
+  const iframeWrapper = document.createElement('div');
+  const nativeIframe = document.createElement("iframe");
+  const iframeMessageListenerHandler = ({ data }) => {
+    // console.log('[iframeMessageListenerHandler] data', data);
+    try {
+      let {
+        pageHeight,
+        aid,
+        adType,
+        ctype,
+        size
+      } = JSON.parse(data);
+      // 原生 popup 處理
+      if (adType === 'ifr-gemini-pp' && ctype === 'setHeight') {
+          // 原生廣告 iframe pop 高
+          const popupNativeAdIframe = document.getElementById('tgmplpp_ifm');
+          if (!popupNativeAdIframe) {
+              return;
+          }
+          popupNativeAdIframe.style.height = `${pageHeight}px`;
+
+          const popWrapper = document.getElementById('tgmplpp');
+          if (!popWrapper) {
+              return;
+          }
+          popWrapper.style.cssText = `position: fixed;
+            background: rgba(0,0,0,.7);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            z-index: 2147483647;
+        `;
+
+          return;
+      }
+      if (adType === 'ifr-gemini-pp' && ctype === 'closeWin') {
+        const popWrapper = document.getElementById('tgmplpp');
+        if (!popWrapper) {
+            console.log('not found!')
+            return;
+        }
+        popWrapper.remove();
+        return;
+      }
+
+      if (adType === 'L-bt') {
+        const ifr = document.getElementById(aid);
+        if (ctype === 'setHeight') {
+            setCookie('sl', '1', 7);
+            return ifr.style.height = `${pageHeight}px`;
+        }
+        if (ctype === 'closeWin') {
+            return ifr.remove();
+        }
+      }
+
+      if (!adType || adType !== 'trkAdsNativeBottom') {
+        return;
+      }
+      if (adType === 'trkAdsNativeBottom' && ctype === 'closeWin') {
+        nativeIframe.remove();
+        return;
+      }
+      
+      const finalHeight = size === 'bottom4' ? 145 : pageHeight;
+      nativeIframe.style.height = `${finalHeight}px`;
+      // window.removeEventListener('message', iframeMessageListenerHandler);
+      // console.log('remove message listener!');
+    } catch (e) {}
+  };
+
+
+  window.addEventListener('message', iframeMessageListenerHandler);
+})();
+
+
